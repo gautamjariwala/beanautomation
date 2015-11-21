@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+
+    <parameter name="username" value="gautamjariwala1@gmail.com" />
+    <parameter name="password" value="ready2go" />
+    <parameter name="category" value="Men's" />
+
+    <test name="Smoke" >
+        <classes>
+            <class name="Tests" >
+                <methods>
+                    <include name="loginverification"/>
+                    <include name="testatbVerification"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
